@@ -47,9 +47,3 @@ def get_orgs(query="", name="", domain="", locations="", types="", page=""):
     # set index to organization name
     result.set_index(result["name"], inplace=True)
     return result
-
-
-test_org = get_orgs(name="capital management", types="investor")
-
-print(type(test_org))
-print(isinstance(test_org, pd.DataFrame))
